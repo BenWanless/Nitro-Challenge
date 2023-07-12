@@ -1,0 +1,64 @@
+.Toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  background: rgba(31, 33, 36, 1);
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 0.75rem;
+  box-shadow: 0rem 0.25rem 1.125rem -0.125rem rgba(31, 33, 36, 0.08),
+    0rem 0.75rem 1.125rem -0.125rem rgba(31, 33, 36, 0.15);
+
+  @media (min-width: 30.625em) {
+    padding: 0.75rem;
+  }
+
+  @media (forced-colors: active) {
+    border: 0.125rem solid transparent;
+  }
+}
+
+.Content {
+  display: flex;
+  align-items: center;
+}
+
+.LeadingIcon {
+  margin-right: 0.5rem;
+
+  svg {
+    fill: currentColor;
+  }
+}
+
+.CloseButton {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  appearance: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  margin-left: 0.5rem;
+
+  svg {
+    fill: currentColor;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus,
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
