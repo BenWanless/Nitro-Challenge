@@ -1,4 +1,3 @@
-import React from "react";
 import { BsSignpostSplit } from "react-icons/bs";
 
 const SidebarLogo = () => {
